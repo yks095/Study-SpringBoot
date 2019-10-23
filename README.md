@@ -70,6 +70,8 @@
 ### Web Server Servlet Container Customizing
   -  `spring.main.web-application-type=none`
     - 웹 서블릿 컨테이너 의존성들이 classpath에 있다 하더라도 무시하고 none-webapplication 으로 실행하고 끝남
+  - 다른 서블릿 컨테이너로 변경
   - `server.port=7070`
     - 포트 변경
     - 랜덤 포트 사용(7070 -> 0)
+    - ApplicationListner<ServletWebServerInitializedEvent>
