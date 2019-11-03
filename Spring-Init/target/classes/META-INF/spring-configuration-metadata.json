@@ -1,0 +1,28 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "kiseok.KiseokProperties",
+      "name": "kiseok",
+      "type": "kiseok.KiseokProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "kiseok.KiseokProperties",
+      "defaultValue": 0,
+      "name": "kiseok.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "kiseok.KiseokProperties",
+      "name": "kiseok.full-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "kiseok.KiseokProperties",
+      "name": "kiseok.name",
+      "type": "java.lang.String"
+    }
+  ]
+}
