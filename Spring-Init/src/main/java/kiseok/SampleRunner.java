@@ -1,5 +1,7 @@
 package kiseok;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -7,6 +9,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class SampleRunner implements ApplicationRunner {
+
+    private Logger logger = LoggerFactory.getLogger(SampleRunner.class);
 
     @Autowired
     private String hello;
@@ -16,11 +20,10 @@ public class SampleRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println("==============");
-        System.out.println(hello);
-        System.out.println(kiseokProperties.getName());
-        System.out.println(kiseokProperties.getFullName());
-        System.out.println("==============");
-
+        logger.debug("==============");
+        logger.debug(hello);
+        logger.debug(kiseokProperties.getName());
+        logger.debug(kiseokProperties.getFullName());
+        logger.debug("==============");
     }
 }

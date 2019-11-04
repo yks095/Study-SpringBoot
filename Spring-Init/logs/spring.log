@@ -1,0 +1,13 @@
+2019-11-04 14:25:05.778  INFO 2640 --- [main] k.SpringInitApplication                  : Starting SpringInitApplication on DESKTOP-5J8PLUI with PID 2640 (C:\Users\Yang\Desktop\Study\inflearn\study-springboot\Spring-Init\target\classes started by Yang in C:\Users\Yang\Desktop\Study\inflearn\study-springboot\Spring-Init)
+2019-11-04 14:25:05.792 DEBUG 2640 --- [main] k.SpringInitApplication                  : Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2019-11-04 14:25:05.792  INFO 2640 --- [main] k.SpringInitApplication                  : The following profiles are active: prod,proddb
+2019-11-04 14:25:06.006  INFO 2640 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@f2ff811: startup date [Mon Nov 04 14:25:06 KST 2019]; root of context hierarchy
+2019-11-04 14:25:08.245  INFO 2640 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-04 14:25:08.276  INFO 2640 --- [main] k.SpringInitApplication                  : Started SpringInitApplication in 3.811 seconds (JVM running for 7.671)
+2019-11-04 14:25:08.278 DEBUG 2640 --- [main] k.SampleRunner                           : ==============
+2019-11-04 14:25:08.279 DEBUG 2640 --- [main] k.SampleRunner                           : hello
+2019-11-04 14:25:08.292 DEBUG 2640 --- [main] k.SampleRunner                           : kiseok prod
+2019-11-04 14:25:08.292 DEBUG 2640 --- [main] k.SampleRunner                           : dbdbdb
+2019-11-04 14:25:08.293 DEBUG 2640 --- [main] k.SampleRunner                           : ==============
+2019-11-04 14:25:08.295  INFO 2640 --- [Thread-6] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@f2ff811: startup date [Mon Nov 04 14:25:06 KST 2019]; root of context hierarchy
+2019-11-04 14:25:08.298  INFO 2640 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
