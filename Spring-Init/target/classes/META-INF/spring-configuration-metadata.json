@@ -23,6 +23,12 @@
       "sourceType": "kiseok.KiseokProperties",
       "name": "kiseok.name",
       "type": "java.lang.String"
+    },
+    {
+      "sourceType": "kiseok.KiseokProperties",
+      "defaultValue": "30s",
+      "name": "kiseok.session-timeout",
+      "type": "java.time.Duration"
     }
   ]
 }

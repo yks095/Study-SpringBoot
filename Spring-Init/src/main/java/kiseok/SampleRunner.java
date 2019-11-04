@@ -9,13 +9,17 @@ import org.springframework.stereotype.Component;
 public class SampleRunner implements ApplicationRunner {
 
     @Autowired
-    KiseokProperties kiseokProperties;
+    private String hello;
+
+    @Autowired
+    private KiseokProperties kiseokProperties;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("==============");
+        System.out.println(hello);
         System.out.println(kiseokProperties.getName());
-        System.out.println(kiseokProperties.getAge());
+        System.out.println(kiseokProperties.getFullName());
         System.out.println("==============");
 
     }

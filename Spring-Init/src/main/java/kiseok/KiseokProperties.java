@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 
 import javax.validation.constraints.NotEmpty;
+import java.time.Duration;
 
 @Component
 @ConfigurationProperties("kiseok")
@@ -15,6 +16,15 @@ public class KiseokProperties {
     private String name;
     private int age;
     private String fullName;
+    private Duration sessionTimeout = Duration.ofSeconds(30);
+
+    public Duration getSessionTimeout() {
+        return sessionTimeout;
+    }
+
+    public void setSessionTimeout(Duration sessionTimeout) {
+        this.sessionTimeout = sessionTimeout;
+    }
 
     public String getName() {
         return name;
