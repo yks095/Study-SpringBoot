@@ -1,6 +1,6 @@
 package kiseok.demospringhateoas;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -24,7 +24,6 @@ public class SampleControllerTest {
         mockMvc.perform(get("/hello"))
                 .andDo(print())
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$._link.self").exists());
+                .andExpect(jsonPath("$._links.self").exists());
     }
-
 }
